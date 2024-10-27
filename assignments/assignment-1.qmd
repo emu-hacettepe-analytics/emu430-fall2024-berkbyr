@@ -1,15 +1,8 @@
 ---
-title: "Assignment 1"
+title: "Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler - Cem Vardar & Erdi Dasdemir"
+author: Berk BAYAR
 ---
 
 # Assignment 1
 
-```{r}
-1 + 1
-```
-
-My first assignment has two parts.
-
-## (a)
-
-## (b)
+## **Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler - Cem Vardar & Erdi Dasdemir**

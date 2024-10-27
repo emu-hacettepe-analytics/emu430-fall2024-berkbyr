@@ -1,9 +1,3 @@
 ---
-title: "Assignment 2"
+title: "data"
 ---
-
-# Assignment 2
-
-```{r}
-1 + 1
-```
