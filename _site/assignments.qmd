@@ -8,9 +8,5 @@ To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 
 ```{r}
 1 + 1
-"In his presentation, Cem Vardar delved deeply into the connection between industrial engineering and data science. After completing his undergraduate and master's degrees at METU, Vardar earned his Ph.D. from Arizona State University and gained significant experience in industrial engineering over nearly 20 years in the United States. Starting his career as an intern at Intel, he moved on to full-time work, participating in various projects such as supply chain management. During this time, he also had the opportunity to work at a startup developing pricing software, where he closely observed how data science could be integrated into business processes.
 
-Most recently, he worked at Carvana, an online car sales company. There, he led a small team focused on data analytics and data science projects. Through these experiences, he learned how data science and industrial engineering complement each other, playing a crucial role in process optimization and decision support systems.
-
-During the presentation, he discussed the general structure of engineering and explained how data science can be evaluated from an industrial engineering perspective. He also shared insights on how to succeed in data science, the key skills needed, and his advice for those looking to pursue a career in the field. Vardar emphasized the growing importance of data-driven thinking and data science applications in the business world, noting that data analytics skills are becoming critical for industrial engineers."
 ```

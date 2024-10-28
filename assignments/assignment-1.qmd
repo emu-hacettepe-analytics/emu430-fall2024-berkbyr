@@ -5,4 +5,88 @@ author: Berk BAYAR
 
 # Assignment 1
 
+# Part A
+
 ## **Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler - Cem Vardar & Erdi Dasdemir**
+
+**SUMMARY**
+
+"In his presentation, Cem Vardar delved deeply into the connection between industrial engineering and data science. After completing his undergraduate and master's degrees at METU, Vardar earned his Ph.D. from Arizona State University and gained significant experience in industrial engineering over nearly 20 years in the United States. Starting his career as an intern at Intel, he moved on to full-time work, participating in various projects such as supply chain management. During this time, he also had the opportunity to work at a startup developing pricing software, where he closely observed how data science could be integrated into business processes.
+
+Most recently, he worked at Carvana, an online car sales company. There, he led a small team focused on data analytics and data science projects. Through these experiences, he learned how data science and industrial engineering complement each other, playing a crucial role in process optimization and decision support systems.
+
+During the presentation, he discussed the general structure of engineering and explained how data science can be evaluated from an industrial engineering perspective. He also shared insights on how to succeed in data science, the key skills needed, and his advice for those looking to pursue a career in the field. Vardar emphasized the growing importance of data-driven thinking and data science applications in the business world, noting that data analytics skills are becoming critical for industrial engineers."
+
+**QUESTION - 1 :** What did Cem Vardar emphasize as crucial for industrial engineers in today's business world?
+
+A)  Knowledge of traditional engineering principles
+B)  **Data-driven thinking and data analytics skills**
+C)  Experience in working at startups
+D)  Understanding of sales and marketing strategies
+
+**QUESTION - 2 :** Where did Cem Vardar gain experience in integrating data science into business processes?
+
+A)  At his internship with Intel
+B)  **At a startup developing pricing software**
+C)  During his Ph.D. at Arizona State University
+D)  While working at Carvana
+
+
+## (b) US Elections Polls
+
+```{r}
+
+
+# Hocam ilk başta tablo çekme kısmını yapamadım en son bir arkadaştan kopya çektim anlamak için affedin.
+
+if (!requireNamespace("dslabs", quietly = TRUE)) {
+  install.packages("dslabs")
+}
+
+library(dslabs)
+
+data(polls_us_election_2016)
+
+
+
+polls_first10 <- head(polls_us_election_2016, 10)
+print(polls_first10)
+
+
+
+total_NA <- sum(is.na(polls_us_election_2016))
+
+print(total_NA)
+
+
+polls_modified <- polls_us_election_2016
+
+
+
+birth_year <- 2004  
+
+polls_modified[sapply(polls_modified, is.numeric)] <- lapply(
+  polls_modified[sapply(polls_modified, is.numeric)], 
+  function(x) replace(x, is.na(x), birth_year)
+)
+
+
+
+first_name <- "Berk"
+
+polls_modified[sapply(polls_modified, is.character)] <- lapply(
+  polls_modified[sapply(polls_modified, is.character)], 
+  function(x) replace(x, is.na(x), first_name)
+)
+
+
+
+print(head(polls_modified, 10))
+
+
+
+remaining_NA <- sum(is.na(polls_modified))
+print(remaining_NA)
+
+
+```
